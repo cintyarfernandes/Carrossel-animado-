@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Hábito saúdavel</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <meta name="author" content="Cintya Rodrigues" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="swiper mySwiper container">
+        <h1>Práticas Saudáveis</h1>
+        <p class="txt">
+          para manter um estilo de vida equilibrado e promover uma boa saúde
+          física, mental e emocional.
+        </p>
+        <div class="swiper-wrapper content">
+          <div class="swiper-slide card">
+            <div class="box1">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/exercitar.jpg" alt="se exercitar" />
+                </div>
+
+                <div class="name-profession">
+                  <h3>Exercitar</h3>
+                  <p>
+                    Reduz o estresse e sintomas de ansiedade, melhora o sono e
+                    etc.
+                  </p>
+                </div> <!---name-profession-->
+
+                <div class=".botao1">
+                  <a
+                    href="https://www.saude.pr.gov.br/Noticia/Saude-destaca-os-beneficios-da-atividades-fisicas-em-todas-fases-da-vida"
+                    target="_blank" >
+                    <button>Saiba mais</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <div class="box2">
+              <div class="card-content">
+                <div class="image">
+                  <img src="assets/agua.jpg" alt="beber água" />
+                </div>
+
+                <div class="name-profession">
+                  <h3>Beber água</h3>
+                  <p>Ajuda a regularizar as funções do nosso organismo</p>
+                </div>
+                <!---name-profession-->
+
+                <div class=".botao2">
+                  <a
+                    href="https://www.bioextratus.com.br/naturalmentebonita/como-beber-agua-influencia-no-cabelo-e-na-pele/"
+                    target="_blank">
+                    <button>Saiba mais</button></a >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <div class="box3">
+              <div class="card-content">
+                <div class="image">
+                  <img src="../assets/dormir.jpg" alt="dormindo" />
+                </div>
+
+                <div class="name-profession">
+                  <h3>Durmir bem</h3>
+                  <p>
+                    Permite que o cérebro processe melhor as novas experiências
+                    e conhecimentos
+                  </p>
+                </div>
+                <!---name-profession-->
+
+                <div class=".botao3">
+                  <a
+                    href="https://www.careplus.com.br/careplus-mais/por-que-e-importante-dormir-bem-conheca-7-beneficios"
+                    target="_blank" >
+                    <button>Saiba mais</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- initializing swiper slider -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        grabCursor: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
